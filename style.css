@@ -1,6 +1,7 @@
-/* google font */
+/* ----- FONTS ----- */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+/* ----- ELEMENTS ----- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,16 +10,33 @@
 
 body {
   background-color: hsl(217, 54%, 11%);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+hr {
+  margin: 20px 10px;
+  border: hsl(215, 51%, 70%) solid 0.25px;
 }
 
 p {
   font-size: 18px;
 }
 
-hr {
-  margin: 20px 10px;
-  border: hsl(215, 51%, 70%) solid .25px;
+/* ----- CARD ----- */
+#avatar {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 #card {
@@ -32,6 +50,52 @@ hr {
   border-radius: 7px;
 }
 
+#clock {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
+
+#create {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  font-size: 15px;
+}
+
+#creation {
+  display: flex;
+}
+
+#eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#ethClock {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ethClock {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#equilibrium {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding: 10px 0px 20px 0px;
+}
+
+.icon {
+  padding: 5px;
+  margin: 0;
+}
+
 #img_container {
   border-radius: 7px;
   width: 300px;
@@ -42,99 +106,41 @@ hr {
   justify-content: center;
 }
 
+#img_equ {
+  border-radius: 7px;
+}
+
+#jules {
+  color: hsl(0, 0%, 100%);
+  padding-left: 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
 #title {
   color: hsl(0, 0%, 100%);
   padding: 10px 0px;
 }
 
-#title:hover {
-  color: hsl(178, 100%, 50%);
-}
-
-#equilibrium{
-  color:hsl(215, 51%, 70%);
-  font-weight: 300;
-  padding: 10px 0px 20px 0px;
-}
-
-#img_equ  {
-  border-radius: 7px;
-}
-
+/* -----STATES ----- */
 #img_equ:hover {
   filter: hsl(178, 100%, 50%);
-}
-
-
-#ethClock{
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#eth {
-  color: hsl(178, 100%, 50%);
-  font-weight: 600;
-  font-size: 16px;
-}
-
-#clock {
-  color:hsl(215, 51%, 70%);
-  font-size: 16px;
-}
-
-#avatar {
-  border: 2px solid hsl(0, 0%, 100%);
-  border-radius: 100px;
-  width: 30px;
-  height: 30px;
-}
-
-#creation {
-  display: flex;
-}
-
-#create {
-  color:hsl(215, 51%, 70%);
-  font-weight: 300;
-  padding-left: 15px;
-  padding-bottom: 25px;
-  font-size: 15px;
-}
-
-#jules {
-color: hsl(0, 0%, 100%);
-padding-left: 5px;
-font-weight: 300;
-font-size: 15px;
+  opacity: 1;
 }
 
 #jules:hover {
   color: hsl(178, 100%, 50%);
 }
 
-.ethClock {
-display: flex;
-flex-wrap: nowrap;
+.overlay:hover {
 }
 
-.icon{
-  padding: 5px;
-  margin: 0;
+#title:hover {
+  color: hsl(178, 100%, 50%);
 }
 
-.attribution { 
-  font-size: 11px; 
-  text-align: center;
-  color: hsl(0, 0%, 100%);
-}
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
-}
-
-/* MEDIA QUERIES */
-/* MOBILE */
+/* ----- MEDIA QUERIES ----- */
+/* ----- MOBILE ----- */
 @media (max-width: 375px) {
   body {
     display: flex;
@@ -142,7 +148,7 @@ flex-wrap: nowrap;
     align-items: center;
   }
 }
-/* DESKTOP */
+/* ----- DESKTOP ----- */
 @media (max-width: 1440px) {
   body {
     display: flex;
