@@ -26,7 +26,6 @@ hr {
   height: 550px;
   background-color: hsl(216, 50%, 16%);
   padding: 10px;
-  margin: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +113,8 @@ flex-wrap: nowrap;
 
 .attribution { 
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
@@ -123,15 +123,18 @@ flex-wrap: nowrap;
 /* MEDIA QUERIES */
 /* MOBILE */
 @media (max-width: 375px) {
-  .card {
+  #card {
     display: flex;
     justify-content: center;
   }
 }
 /* DESKTOP */
 @media (max-width: 1440px) {
-  .card {
+  body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 100px;
   }
 }
