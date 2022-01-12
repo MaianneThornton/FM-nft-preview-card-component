@@ -91,23 +91,33 @@ p {
   padding: 10px 0px 20px 0px;
 }
 
+.eye {
+  color: hsl(0, 0%, 100%);
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .icon {
   padding: 5px;
   margin: 0;
 }
 
 #img_container {
-  border-radius: 7px;
-  width: 300px;
-  height: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
   padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #img_equ {
   border-radius: 7px;
+  width: 100%;
+  height: auto;
 }
 
 #jules {
@@ -123,16 +133,25 @@ p {
 }
 
 /* -----STATES ----- */
-#img_equ:hover {
-  filter: hsl(178, 100%, 50%);
-  opacity: 1;
-}
-
 #jules:hover {
   color: hsl(178, 100%, 50%);
 }
 
-.overlay:hover {
+#img_container:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 7px;
 }
 
 #title:hover {
