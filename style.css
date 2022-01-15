@@ -23,6 +23,46 @@ p {
 }
 
 /* ----- CARD ----- */
+.avatar {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* ----- FONTS ----- */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* ----- ELEMENTS ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+hr {
+  margin: 20px 10px;
+  border: hsl(215, 51%, 70%) solid 0.25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* ----- CARD ----- */
 #avatar {
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 100px;
@@ -39,7 +79,7 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-#card {
+.card {
   width: 325px;
   height: 550px;
   background-color: hsl(216, 50%, 16%);
@@ -64,6 +104,145 @@ p {
 }
 
 #creation {
+  display: flex;
+}
+
+#eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card__copy {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ethClock {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#equilibrium {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding: 10px 0px 20px 0px;
+}
+
+.eye {
+  color: hsl(0, 0%, 100%);
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.icon {
+  padding: 5px;
+  margin: 0;
+}
+
+.card__figure {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+}
+
+#img_equ {
+  border-radius: 7px;
+  width: 100%;
+  height: auto;
+}
+
+#jules {
+  color: hsl(0, 0%, 100%);
+  padding-left: 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.card__title {
+  color: hsl(0, 0%, 100%);
+  padding: 10px 0px;
+}
+
+/* -----STATES ----- */
+#jules:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+#img_container:hover .overlay {
+  opacity: 0.5;
+}
+
+.card__image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 7px;
+}
+
+#title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----- MOBILE ----- */
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ----- DESKTOP ----- */
+@media (max-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
+
+.card {
+  width: 325px;
+  height: 550px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+#clock {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
+
+#create {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  font-size: 15px;
+}
+
+.card__footer {
   display: flex;
 }
 
@@ -107,7 +286,7 @@ p {
   margin: 0;
 }
 
-#img_container {
+.card__figure {
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -127,7 +306,7 @@ p {
   font-size: 15px;
 }
 
-#title {
+.card_title {
   color: hsl(0, 0%, 100%);
   padding: 10px 0px;
 }
@@ -154,7 +333,7 @@ p {
   border-radius: 7px;
 }
 
-#title:hover {
+.card__title:hover {
   color: hsl(178, 100%, 50%);
 }
 
