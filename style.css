@@ -102,7 +102,7 @@ p {
 }
 
 .eye {
-  color: rgb(0, 255, 247, 0.4);
+  color: hsl(0, 100%, 100%);
   font-size: 100px;
   position: absolute;
   top: 50%;
@@ -121,7 +121,8 @@ p {
   position: relative;
   width: 100%;
   max-width: 400px;
-  padding: 5px;
+  padding: 10px;
+  padding-top: 40px;
 }
 
 #img_equ {
@@ -151,7 +152,7 @@ p {
   opacity: 1;
 }
 
-.card__image .overlay {
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -160,7 +161,7 @@ p {
   height: 100%;
   opacity: 0;
   transition: 0.3s ease;
-  background-color: hsl(178, 100%, 50%);
+  background-color: rgba(0, 255, 247, 0.4);
   border-radius: 7px;
 }
 
