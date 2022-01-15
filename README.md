@@ -61,8 +61,9 @@ I also plan on continuing to learn the best ways to phrase git commits, so that 
 
 ### Useful resources 📖
 
-- [Example resource 1](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - This helped me determine the best course of action in implementing the image overlay icon feature.
-- [Example resource 2](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) - This is an amazing article which helped me write better commit messages. I'd recommend it to anyone still learning this concept.
+- [Resource 1](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - This helped me determine the best course of action in implementing the image overlay icon feature.
+- [Resource 2](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) - This is an amazing article which helped me write better commit messages. I'd recommend it to anyone still learning this concept.
+- [Resource 3](https://9elements.com/bem-cheat-sheet/) - This is an amazing article which helped me write class names and better organize my code. I'd recommend it to everyone learning this concept.
 
 
 
