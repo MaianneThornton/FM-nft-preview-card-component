@@ -76,4 +76,4 @@ I also plan on continuing to learn the best ways to phrase git commits, so that 
 - LinkedIn - [@MaianneThornton](https://www.linkedin.com/in/maiannethornton/)
 
 ## Acknowledgments 🙏🏾
-Special Thanks go to @PhoenixDev22(https://www.frontendmentor.io/profile/PhoenixDev22) and @zeerobit(https://www.frontendmentor.io/profile/zeerobit) for their expertise and assistance in fine-tuning my code.
+Special Thanks go to [@PhoenixDev22](https://www.frontendmentor.io/profile/PhoenixDev22) and [@zeerobit](https://www.frontendmentor.io/profile/zeerobit) for their expertise and assistance in fine-tuning my code.
